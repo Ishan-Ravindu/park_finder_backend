@@ -1,7 +1,10 @@
 import express, { Express, Request, Response } from 'express'
 import bodyParser from 'body-parser'
+import { AuthMiddleware } from './middleware'
 
 const app: Express = express()
+
+app.use(AuthMiddleware.decodeToken)
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
