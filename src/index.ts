@@ -1,6 +1,6 @@
 import express, { Express, Request, Response } from 'express'
 import bodyParser from 'body-parser'
-import { AuthMiddleware } from './middleware'
+// import { AuthMiddleware } from './middleware'
 import hello from "./routes/hello"
 import parkingList from "./routes/parking-list"
 
