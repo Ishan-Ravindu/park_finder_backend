@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.get('/', hello)
-app.get('/parking-list', parkingList)
+app.get('/parking-center', parkingList)
 
 app.listen(8080, async () => {
   console.log('Server is running at http://localhost:8080')
